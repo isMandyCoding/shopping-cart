@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/header.js'
 import CartFooter from './components/CartFooter.js'
+import CartItems from './components/CartItems.js'
 
 
 class App extends Component {
@@ -10,7 +11,9 @@ class App extends Component {
     return (
      <body>
        <Header />
+       <CartItems />
       <CartFooter />
+      
      </body>
     )
   }
