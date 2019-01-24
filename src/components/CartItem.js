@@ -1,16 +1,18 @@
 import React from 'react'
-import CartItem from './components/CartItem.js'
+
 
 class CartItem extends React.Component {
     render() {
+        let {item} = this.props
+        console.log(item.productpriceInCents)
         return (
-            <div class="collection-item">
-                <div class="row">
-                    <div class="col-md-8">Mediocre Iron Watch</div>
-                    <div class="col-md-2">$3.99</div>
-                    <div class="col-md-2">1</div>
-                </div>
-            </div>
+            <div className="list-group-item">
+                    <div className="row">
+                        <div className="col-md-8">{item.product.name}</div>
+                        <div className="col-md-2">Price: {`$ ${Math.ceil(parseInt(item.product.priceInCents) ) / 100}`}</div>
+                        <div className="col-md-2">Quantity: {item.quantity} </div>
+                    </div>
+                    </div>
         )
     }
 }

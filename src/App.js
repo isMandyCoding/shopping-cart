@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/header.js'
 import CartFooter from './components/CartFooter.js'
 import CartItems from './components/CartItems.js'
-import CartItem from './components/CartItem.js'
+
 
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
     return (
      <body>
        <Header />
-       <CartItems />
+       <CartItems cartItemsList={cartItemsList} />
       <CartFooter copyright="2016" />
       
      </body>
