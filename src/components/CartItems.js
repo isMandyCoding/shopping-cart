@@ -1,4 +1,5 @@
 import React from 'react'
+import CartItem from './components/CartItem.js'
 
 class CartItems extends React.Component {
 
