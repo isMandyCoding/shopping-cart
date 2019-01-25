@@ -5,7 +5,7 @@ class CartItems extends React.Component {
 
     render () {
         const {cartItemsList} = this.props
-        const itemsMapped = cartItemsList.map(item => <CartItem item={item}/> )
+        const itemsMapped = cartItemsList.map(item => <CartItem item={item} key={item.id}/> )
 
         return (
             <div className="container">
