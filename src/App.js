@@ -34,10 +34,9 @@ class App extends Component {
   }, 0)
 
   addItemToCart = item => {
-    this.setState(prevState => {
-      let cartItemsList = [...prevState.cartItemsList, item]     
+    this.setState(prevState => {     
       return {        
-        cartItemsList
+        cartItemsList: [...prevState.cartItemsList, item]
       }
     })
   }
